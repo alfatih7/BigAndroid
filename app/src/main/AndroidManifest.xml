@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alfatih.bigsooq">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".unit2.picker.PickersActivity"></activity>
+        <activity android:name=".unit2.DialogActivity" />
+        <activity android:name=".unit2.CmenuActivity" />
+        <activity android:name=".unit2.clickableimage.OrderdActivity" />
+        <activity
+            android:name=".unit2.clickableimage.OrderingApp"
+            android:label="@string/title_activity_ordering_app"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".supportlib.SupportActivity" />
+        <activity android:name=".debugger.SimpleCalc" />
+        <activity android:name=".activities.ImplicitActivity" />
+        <activity android:name=".codec.cc5.SecondActivityChallenge5" />
+        <activity android:name=".codec.cc5.MainActivityChallenge5" />
+        <activity android:name=".activities.FirstActivity" />
+        <!--
+                This parent-child relationship enables Android
+            to add navigation hints such as left-facing arrows
+            in the title bar for each activity
+        -->
+        <activity
+            android:name=".activities.SecondActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".activities.FirstActivity">
+
+            <!-- <meta-data -->
+            <!-- android:name="android.support.PARENT_ACTIVITY" -->
+            <!-- android:value= -->
+            <!-- "com.alfatih.bigsooq.TestLayout" /> -->
+        </activity>
+        <activity
+            android:name=".LauncherActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ScrollTextActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LayoutEditor" />
+        <activity android:name=".TestLayout" />
+    </application>
+
+</manifest>

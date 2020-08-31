@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="horizontal"
+    tools:context=".TestLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/c_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/enter_your_message_here"
+            android:inputType="textLongMessage|textPersonName"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/zero_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_zero" />
+
+        <Button
+            android:id="@+id/count_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Count" />
+
+        <Button
+            android:id="@+id/button_basic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="basicA" />
+    </LinearLayout>
+
+</LinearLayout>
