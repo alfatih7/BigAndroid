@@ -12,11 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="308dp"
-        android:layout_marginEnd="16dp"
         android:gravity="center"
         android:text="@string/date_text"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,12 +23,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="200dp"
-        android:text="date"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="showDatePicke"
+        android:text="@string/date_btn"
         app:layout_constraintEnd_toEndOf="@+id/textView_picker_date"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="@+id/textView_picker_date"
         app:layout_constraintTop_toBottomOf="@+id/textView_picker_date" />
+
+    <Button
+        android:id="@+id/time_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="86dp"
+        android:onClick="showTimeDialog"
+        android:text="@string/time_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/button_pick_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_pick_date" />
+
+    <TextView
+        android:id="@+id/time_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="time"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_picker_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_picker_date" />
 </androidx.constraintlayout.widget.ConstraintLayout>

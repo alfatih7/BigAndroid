@@ -142,4 +142,8 @@ beginning of the course is a powerful motivational tool
     <string name="alert_text_view">Hello World! Tap to test the alert</string>
     <string name="alert_button">alert</string>
     <string name="date_text">Tap the button to pick the date</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="time_btn">Time</string>
+    <string name="date_btn">date</string>
 </resources>
